@@ -2,11 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MarioYeahs</title>
-    <script src="./js/index.js"></script>
-    <style>
+    <title>Mario Gallardo</title>
+    <style>			
+			  .stylish-link {
+			      display: inline-block;
+			      padding: 10px 20px;
+			      background-color: #3498db;
+			      color: white;
+			      text-decoration: none;
+			      border-radius: 5px;
+			      font-weight: bold;
+			      transition: background-color 0.3s ease;
+			  }
+			  .stylish-link:hover {
+			      background-color: #2980b9;
+			  }
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -23,79 +34,91 @@
             border-bottom: 2px solid #3498db;
             padding-bottom: 10px;
         }
-        ol {
-            padding-left: 20px;
+        ul {
+            list-style-type: none;
+            padding-left: 0;
         }
         li {
-            margin-bottom: 5px;
+            margin-bottom: 10px;
         }
-        button {
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="text"], input[type="submit"] {
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
             background-color: #3498db;
             color: white;
             border: none;
-            padding: 10px 20px;
-            font-size: 16px;
             cursor: pointer;
-            transition: background-color 0.3s ease;
         }
-        button:hover {
+        input[type="submit"]:hover {
             background-color: #2980b9;
         }
     </style>
 </head>
 <body>
-    <h1>Hi, I'm Mario</h1>
-    <p>This is my GitHub Pages!</p>
-    <p>I'm a telematics engineer studying my 6th semester at UPIITA, Instituto Politécnico Nacional</p>
-    
-    <h2>My projects</h2>
-    <ol>
-        <li>Armario</li>
-        <li>Room</li>
-        <li>Server - Client communication</li>
-    </ol>
-    
-    <button id='alert'>Go to my GitHub profile</button>
-    
-    <h2>Hackathons I've participated in</h2>
-    <ol>
-        <li>NASA</li>
-        <li>Maratona Behind the code IMB</li>
-        <li>Async API</li>
-    </ol>
-    
-    <h2>Programming Languages</h2>
-    <ol>
-        <li>C/C++</li>
-        <li>Java</li>
-        <li>Python</li>
-        <li>JavaScript</li>
-        <li>Assembly</li>
-        <li>Swift</li>
-    </ol>
-    
-    <h2>Frameworks</h2>
-    <ol>
-        <li>Django</li>
-        <li>Flask</li>
-    </ol>
-    
-    <h2>Communities</h2>
-    <ol>
-        <li>Mozilla México</li>
-        <li>GDSC: UPIITA</li>
+    <h1>Mario Gallardo</h1>
+    <a href="cv.html" class="stylish-link">View My CV</a>
+
+    <h2>Experiencia</h2>
+    <ul>
         <li>Quantum Robotics</li>
-    </ol>
-    
-    <h2>Workshops</h2>
-    <ol>
-        <li>MDN for beginners</li>
-    </ol>
-    
-    <h2>Certificates</h2>
-    <ol>
-        <li>Microsoft Certified: Azure Fundamentals</li>
-        <li>CISCO: Introduction to Cybersecurity</li>
-    </ol>
+        <a target="_blank" href="https://www.linkedin.com/company/qrteam-cem/posts/?feedView=all">
+            <img src="quantum.jpeg" alt="quantum">
+        </a>
+        <li>Teradata</li>
+        <li>Room</li>
+    </ul>
+    <h2>Hobbies</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Outdoor</th>
+                <th>Indoor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>calistenia</td>
+                <td>DJ</td>
+            </tr>
+            <tr>
+                <td>soccer</td>
+                <td>dibujar</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Viajes</h2>
+    <img src="astra.jpg" alt="Viajes">
+    <form action="">
+        <div>
+            <label for="cproducto">Producto:</label>
+            <input type="text" id="cproducto" name="producto">
+        </div>
+        <div><input type="submit" value="Enviar"></div>
+    </form>
 </body>
 </html>
